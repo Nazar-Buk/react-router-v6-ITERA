@@ -1,0 +1,13 @@
+export const fetchProduct = ({ params }) => {
+  return new Promise((res) => {
+    setTimeout(
+      () =>
+        res({
+          name: "Sneakers",
+          price: 30 + "$",
+          id: params.productId,
+        }),
+      5000
+    );
+  });
+};
